@@ -42,7 +42,6 @@ public class DynamicRouteLocator extends SimpleRouteLocator implements Refreshab
 
     @Override
     protected Map<String, ZuulProperties.ZuulRoute> locateRoutes() {
-
         Map<String, ZuulProperties.ZuulRoute> routesMap = new LinkedHashMap<>();
         //先加载本地
         routesMap.putAll(super.locateRoutes());
@@ -65,7 +64,6 @@ public class DynamicRouteLocator extends SimpleRouteLocator implements Refreshab
         }
 
         System.out.println("路由表：" + values);
-
         return values;
     }
 
@@ -96,9 +94,6 @@ public class DynamicRouteLocator extends SimpleRouteLocator implements Refreshab
 
             routes.put(zuulRoute.getPath(), zuulRoute);
         }
-
         return routes;
     }
-
-
 }
