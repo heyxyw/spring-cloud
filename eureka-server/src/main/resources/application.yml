@@ -3,6 +3,8 @@ server:
 eureka:
   instance:
     hostname: localhost
+    # 服务超过2 秒没有上报，就视为
+    lease-expiration-duration-in-seconds: 2
   client:
     registerWithEureka: false
     fetchRegistry: false
@@ -10,3 +12,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   server:
     enableSelfPreservation: false
+    response-cache-update-interval-ms: 100
+    # 每隔多少秒去检查心跳
+    eviction-interval-timer-in-ms: 1000

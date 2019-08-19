@@ -30,7 +30,7 @@ public class OrderController {
         inventoryService.deductStock(productId, count);
         wmsService.delivery(productId);
         creditService.add(userId, totalPrice);
-        payService.pay(12434L);
+//        payService.pay(12434L);
         return "success";
     }
 

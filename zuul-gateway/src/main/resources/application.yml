@@ -20,6 +20,32 @@ eureka:
 
 zuul:
   retryable: true
+#  ribbon:
+#    eager-load:
+#      enabled: true
 #  routes:
 #    order-service:
 #      path: /xx1/**
+
+
+ribbon:
+  eager-load:
+    enabled: true
+  ConnectTimeout: 3000
+  ReadTimeout: 3000
+  OkToRetryOnAllOperations: true
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: 1
+
+feign:
+  hystrix:
+    enabled: false
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000

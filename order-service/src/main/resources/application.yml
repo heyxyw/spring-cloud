@@ -13,3 +13,13 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
+    registry-fetch-interval-seconds: 1
+    instance-info-replication-interval-seconds: 1
+
+ribbon:
+  eager-load:
+    enabled: true
+
+feign:
+  hystrix:
+    enabled: false
