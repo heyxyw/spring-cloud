@@ -1,5 +1,14 @@
 ### spring-cloud 学习项目
 
+本项目是学习《中华石杉老师-21天互联网Java进阶面试训练营（分布式篇）》课程时自己整理的笔记和代码试验，希望对大家有所帮助。
+课程质量是当前市面上最好的，没有之一。可以扫一个下面二维码加入
+
+![](doc/image/1041568856705_.pic.jpg)
+
+也可以微信上从下面链接进去：[https://apppuKyPtrl1086.h5.xiaoeknow.com/content_page/eyJ0eXBlIjoiMyIsInJlc291cmNlX3R5cGUiOiI2IiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ZDMxMTBjM2MwZTlkX0ZubVRUdGo0IiwiYXBwX2lkIjoiYXBwcHVLeVB0cmwxMDg2Iiwic2hhcmVfdXNlcl9pZCI6InVfNWQyMjllMWNkZDY4MV8yV21sd1pzTWRLIiwic2hhcmVfdHlwZSI6NX0](https://apppuKyPtrl1086.h5.xiaoeknow.com/content_page/eyJ0eXBlIjoiMyIsInJlc291cmNlX3R5cGUiOiI2IiwicmVzb3VyY2VfaWQiOiIiLCJwcm9kdWN0X2lkIjoicF81ZDMxMTBjM2MwZTlkX0ZubVRUdGo0IiwiYXBwX2lkIjoiYXBwcHVLeVB0cmwxMDg2Iiwic2hhcmVfdXNlcl9pZCI6InVfNWQyMjllMWNkZDY4MV8yV21sd1pzTWRLIiwic2hhcmVfdHlwZSI6NX0)
+
+
+### 如何运行项目
 首先运行 Eureka 服务注册中心 eureka-server
 
 然后依次运行 各服务 credit-service、inventory-service、wms-service、order-service
